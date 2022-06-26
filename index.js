@@ -4,7 +4,7 @@ import * as fs from 'fs';
 
 var incr =0;
 var nd=0;
-var pop=process.env.PORT;
+var pop=process.env.PORT || 3000 ;
 
 const wss = new WebSocketServer({ port: pop });
 wss.on("connection", function connection(ws, req) {
